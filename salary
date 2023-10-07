@@ -1,0 +1,89 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	long int basic,da,hra,tra,gross,pf,it,netsalary;
+	clrscr();
+	cout<<"Enter basic:";
+	cin>>basic;
+	clrscr();
+	if(basic<=5000)
+	{
+		da=basic*5/100;
+	}
+	else if(basic>=5000 && basic<=8000)
+	{
+		da=basic*8/100;
+	}
+	else if(basic>=8000 && basic<=12000)
+	{
+		da=basic*10/100;
+	}
+	else
+	{
+		da=basic*12/100;
+	}
+
+	if(basic<=10000)
+	{
+		hra=basic*7/100;
+	}
+	else if(basic>=10000 && basic<=15000)
+	{
+		hra=basic*9/100;
+	}
+	else
+	{
+		hra=basic*11/100;
+	}
+
+	if(basic<=15000)
+	{
+		tra=basic*5/100;
+	}
+	else
+	{
+		tra=basic*8/100;
+	}
+	gross=basic+da+hra+tra;
+
+	if(gross<=10000)
+	{
+		pf=gross*3/100;
+	}
+	else if(gross>=10000 && gross<=20000)
+	{
+		pf=gross*4/100;
+	}
+	else
+	{
+		pf=gross*6/100;
+	}
+
+	if(gross<=20000)
+	{
+		it=gross*8/100;
+	}
+	else
+	{
+		it=gross*12/100;
+	}
+
+	netsalary=gross-pf-it;
+
+
+
+	cout<<"\n------------------------------------------";
+	cout<<"\n\tEmploy salary details";
+	cout<<"\n------------------------------------------";
+	cout<<"\nEraning\t\t\t\tDeducation";
+	cout<<"\n------------------------------------------";
+	cout<<"\nbasic: "<<basic;
+	cout<<"\nda   :"<<da<<"\t\t\tpf:"<<pf;
+	cout<<"\nhra  :"<<hra<<"\t\t\tit:"<<it;
+	cout<<"\ntra  :"<<tra;
+	cout<<"\ngross:"<<gross<<"\t\t Netsalary:"<<netsalary;
+
+
+getch();
+}
