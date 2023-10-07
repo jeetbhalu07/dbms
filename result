@@ -1,0 +1,141 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int s1,s2,s3,s4,s5,total,avg,temp=0;
+	clrscr();
+
+	cout<<"Enter s1 = ";
+	cin>>s1;
+	cout<<"Enter s2 = ";
+	cin>>s2;
+	cout<<"Enter s3 = ";
+	cin>>s3;
+	cout<<"Enter s4 = ";
+	cin>>s4;
+	cout<<"Enter s5 = ";
+	cin>>s5;
+
+	total=s1+s2+s3+s4+s5;
+	cout<<"\nTotal = "<<total;
+
+	if(s1>35 && s2>35 && s3>35 && s4>35 && s5>35)
+	{
+		avg=total/5;
+		cout<<"\nAvg = "<<avg;
+	}
+	else
+	{
+		cout<<"\nAvg = ******";
+	}
+
+	if(s1>s2 && s1>s3 && s1>s4 && s1>s5)
+	{
+		cout<<"\nMax = "<<s1;
+	}
+	else if(s2>s3 && s2>s4 && s2>s5)
+	{
+		cout<<"\nMax = "<<s2;
+	}
+	else if(s3>s4 && s3>s5)
+	{
+		cout<<"\nMax = "<<s3;
+	}
+	else if(s4>s5)
+	{
+		cout<<"\nMax = "<<s4;
+	}
+	else
+	{
+		cout<<"\nMax = "<<s5;
+	}
+
+	if(s1<s2 && s1<s3 && s1<s4 && s1<s5)
+	{
+		cout<<"\nMin = "<<s1;
+	}
+	else if(s2<s3 && s2<s4 && s4<s5)
+	{
+		cout<<"\nMin = "<<s2;
+	}
+	else if(s3>s4 && s3>s5)
+	{
+		cout<<"\nMin = "<<s3;
+	}
+	else if(s4>s5)
+	{
+		cout<<"\nMin = "<<s4;
+	}
+	else
+	{
+		cout<<"\nMin = "<<s5;
+	}
+
+	if(s1>35 && s2>35 && s3>35 && s4>35 && s5>35)
+	{
+		if(avg>90)
+		{
+			cout<<"\nGrade = A+";
+		}
+		else if(avg>80)
+		{
+			cout<<"\nGrade = A";
+		}
+		else if(avg>70)
+		{
+			cout<<"\nGrade = B+";
+		}
+		else if(avg>60)
+		{
+			cout<<"\nGrade = B";
+		}
+		else if(avg>50)
+		{
+			cout<<"\nGrade = C+";
+		}
+		else
+		{
+			cout<<"\nGrade = D";
+		}
+	}
+	else
+	{
+		cout<<"\nGrade = Fail";
+	}
+
+	if(s1>35)
+	{
+		temp=temp+1;
+	}
+	if(s2>35)
+	{
+		temp=temp+1;
+	}
+	if(s3>35)
+	{
+		temp=temp+1;
+	}
+	if(s4>35)
+	{
+		temp=temp+1;
+	}
+	if(s5>35)
+	{
+		temp=temp+1;
+	}
+
+	if(temp==5)
+	{
+		cout<<"\nResult = Pass";
+	}
+	else if(temp==3)
+	{
+		cout<<"\nResult = ATKT";
+	}
+	else
+	{
+		cout<<"\nResult =Fail";
+	}
+
+	getch();
+}
