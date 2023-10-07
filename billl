@@ -1,0 +1,88 @@
+#include<iostream.h>
+#include<string.h>
+#include<conio.h>
+#include<stdio.h>
+class con
+{
+	public:
+	long int co,n,i,pn,p[100],sn;
+	char name[100],sname[100],pname[100][100];
+	double bn,price[100];
+	con()
+	{
+		cout<<"store name:";
+		cin>>sname;
+		cout<<"\nbill no:";
+		cin>>bn;
+		cout<<"\tcontect:";
+		cin>>co;
+		cout<<"\n name:";
+		cin>>name;
+
+		cout<<"\n enter n=";
+		cin>>n;
+
+
+		for(i=0;i<n;i++)
+		{
+			cout<<"\n prod name:";
+			gets(pname[i]);
+
+			cout<<"\nprice:";
+			cin>>p[i];
+		}
+		cout<<"\n\tproduct no.\tproduct name.\tprice";
+		for(i=0;i<n;i++)
+		{
+			cout<<"\n\t"<<i+1<<"\t\t"<<pname[i]<<"\t\t"<<p[i];
+		}
+
+
+	}
+	void add()
+	{
+		cout<<"\n enter add yopur product:";
+		cin>>n2;
+		for(i=n;i<n2+1;i++)
+		{
+			cout<<"enter Pno:";
+			cin>>p[i];
+			cout<<"enter Pname:";
+			cin>>pname[i];
+			cout<<"enter price:";
+			cin>>price[i];
+		}
+
+	}
+	void del()
+	{
+
+	}
+	void printbill()
+	{
+
+	}
+};
+void main()
+{
+	int ch;
+	clrscr();
+	con x;
+	cout<<"\n1.Add product";
+	cout<<"\n2.delete product";
+	cout<<"\n3.printf bill";
+	cout<<"\n4.exit";
+
+	cout<<"\nentyer your choce:";
+	cin>>ch;
+
+	switch(ch)
+	{
+		case 1:
+		x.add;
+
+
+	}
+
+	getch();
+}
